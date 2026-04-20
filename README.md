@@ -2,22 +2,6 @@
 
 A professional, enterprise-grade React application for calculating and presenting bridge abutment rehabilitation bids. This tool transforms complex industrial job-costing into a streamlined, modular experience for the Beyond Group team.
 
----
-
-## 🏛️ Architecture & Design Choices
-
-### 1. Modular "Separation of Concerns"
-Instead of a monolithic application, I architected this project into four distinct layers:
-- **`rates.js`**: A centralized "Source of Truth" for business constants (e.g., $2,300/drum, $750/extended day). This makes the tool future-proof as market rates change.
-- **`calculator.js`**: A pure mathematical engine. It’s decoupled from React, making it incredibly fast and easy to unit-test.
-- **`Dashboard.jsx`**: A high-efficiency, reactive interface for internal cost-auditing.
-- **`Proposal.jsx`**: A print-optimized deliverable engine that generates official client-facing PDFs.
-
-### 2. Job-Costing Integrity
-I made a deliberate choice to maintain **Fractional Drum Usage** in the job costs. 
-> **Rationale**: While some tools round up to the nearest drum (artificially inflating this job's cost and next week's profit), this tool tracks the exact value of the material consumed. This ensures accurate profit-margin reporting for the Lethbridge project without "stealing" value from the inventory for future jobs.
-
----
 
 ## 📖 User Guide: Navigating the Tool
 
@@ -40,6 +24,23 @@ To see if your bid is actually healthy, click the **🔒 Internal Cost Build** t
 - Once you are happy with the numbers, click **⚡ Generate Professional Quote**.
 - Review the **Quote Overview** for accuracy.
 - Click **📥 Download Professional Bid (PDF)**. This will trigger a print-preview of a single-page, formal proposal with official Beyond Group branding, ready to be sent to the client.
+
+---
+
+## 🏛️ Architecture & Design Choices
+
+### 1. Modular "Separation of Concerns"
+Instead of a monolithic application, I architected this project into four distinct layers:
+- **`rates.js`**: A centralized "Source of Truth" for business constants (e.g., $2,300/drum, $750/extended day). This makes the tool future-proof as market rates change.
+- **`calculator.js`**: A pure mathematical engine. It’s decoupled from React, making it incredibly fast and easy to unit-test.
+- **`Dashboard.jsx`**: A high-efficiency, reactive interface for internal cost-auditing.
+- **`Proposal.jsx`**: A print-optimized deliverable engine that generates official client-facing PDFs.
+
+### 2. Job-Costing Integrity
+I made a deliberate choice to maintain **Fractional Drum Usage** in the job costs. 
+> **Rationale**: While some tools round up to the nearest drum (artificially inflating this job's cost and next week's profit), this tool tracks the exact value of the material consumed. This ensures accurate profit-margin reporting for the Lethbridge project without "stealing" value from the inventory for future jobs.
+
+---
 
 ---
 
