@@ -66,3 +66,8 @@ If I had another 24 hours with this codebase, I would implement:
 **GitHub Sync**:
 1. `git remote add origin https://github.com/saada865/foam-quote.git`
 2. `git push -u origin main`
+
+
+**Deployment**
+By clicking this link you go to the deployed web app
+https://foam-quote.vercel.app/
