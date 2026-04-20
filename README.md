@@ -69,5 +69,5 @@ If I had another 24 hours with this codebase, I would implement:
 
 
 ##**Deployment**
-##By clicking this link you go to the deployed web app
-##https://foam-quote.vercel.app/
+**By clicking this link you go to the deployed web app**
+**https://foam-quote.vercel.app/**
