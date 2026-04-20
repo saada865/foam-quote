@@ -42,8 +42,6 @@ I made a deliberate choice to maintain **Fractional Drum Usage** in the job cost
 
 ---
 
----
-
 ## 🔢 Mathematical Verification (Lethbridge Job)
 For the standard 18 m³ project, the tool calculates:
 - **Material Selection**: 2,354.4 lbs (incl. 12% waste).
