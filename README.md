@@ -52,7 +52,7 @@ For the standard 18 m³ project, the tool calculates:
 
 ## 🚀 Future Technical Roadmap
 If I had another 24 hours with this codebase, I would implement:
-1. **Unit Test Suite**: Implement a full suite of Vitest tests for the `calculator.js` engine to ensure zero regressions as rates change.
+1. **AI-Powered Fuel Optimization**: Integrate a smart engine that factors in real-time fuel prices, vehicle idling, and grade-based consumption to provide accurate fuel estimates.
 2. **AI-Powered Lead Parsing**: Integrate an LLM (like Gemini or GPT-4) to automatically scan incoming contractor emails, extract the volume and site location, and pre-fill the Dashboard parameters for one-click quoting.
 
 ---
