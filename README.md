@@ -23,7 +23,7 @@ To see if your bid is actually healthy, click the **Internal Cost Build** toggle
 ### 4. Generating the Quote
 - Once you are happy with the numbers, click **Generate Professional Quote**.
 - Review the **Quote Overview** for accuracy.
-- Click **📥 Download Professional Bid (PDF)**. This will trigger a print-preview of a single-page, formal proposal with official Beyond Group branding, ready to be sent to the client.
+- Click **Download Professional Bid (PDF)**. This will trigger a print-preview of a single-page, formal proposal with official Beyond Group branding, ready to be sent to the client.
 
 ---
 
