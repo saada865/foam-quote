@@ -68,6 +68,6 @@ If I had another 24 hours with this codebase, I would implement:
 2. `git push -u origin main`
 
 
-##**Deployment**
-**By clicking this link you go to the deployed web app**
+## Deployment
+**By clicking this link you go to the deployed web app**:
 **https://foam-quote.vercel.app/**
