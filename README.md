@@ -16,12 +16,12 @@ When you first open the tool, you are met with a clean, high-contrast dashboard.
 - **Quick Load**: Use the "Load Lethbridge Example" button at the bottom of the left panel to instantly restore the standard challenge baseline.
 
 ### 3. "Hidden" Internal Analysis
-To see if your bid is actually healthy, click the ** Internal Cost Build** toggle at the bottom of the right panel.
+To see if your bid is actually healthy, click the **Internal Cost Build** toggle at the bottom of the right panel.
 - This reveals "private" costs like fuel burn, worker per-diems, hotel costs, and equipment maintenance.
 - **Rationale**: This allows you to audit the **Net Profit** and **Project Margin %** privately before presenting the quote to the client.
 
 ### 4. Generating the Quote
-- Once you are happy with the numbers, click ** Generate Professional Quote**.
+- Once you are happy with the numbers, click **Generate Professional Quote**.
 - Review the **Quote Overview** for accuracy.
 - Click **📥 Download Professional Bid (PDF)**. This will trigger a print-preview of a single-page, formal proposal with official Beyond Group branding, ready to be sent to the client.
 
