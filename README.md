@@ -35,10 +35,7 @@ For the standard 18 m³ project, the tool calculates:
 
 ## 🚀 The Road Ahead (What I'd build next)
 If I had another 24 hours with this codebase, I would implement:
-1. **Inventory Hook**: Connect the material yield (lbs) directly to an ERP or inventory system to trigger automatic restocking orders.
-2. **CRM Integration**: Enable "Quote Syncing" where a generated bid is automatically saved to the client's file in Salesforce or HubSpot.
-3. **Multi-Scenario Comparison**: A side-by-side view where users can compare "standard" vs "expedited" timelines to see the margin trade-offs in real-time.
-4. **Offline Mode**: Using Service Workers to allow field crews to generate quotes even in remote areas with zero cell reception.
+
 
 ---
 
