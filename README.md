@@ -1,6 +1,6 @@
 # 🏗️ Beyond Group: Industrial Foam Quote Tool
 
-A professional, enterprise-grade React application for calculating and presenting bridge abutment rehabilitation bids. This tool transforms complex industrial job-costing into a streamlined, modular experience for the Beyond Group team.
+A professional, React application for calculating and presenting bridge abutment rehabilitation bids. This tool transforms complex industrial job-costing into a streamlined, modular experience for the Beyond Group team.
 
 
 ## 📖 User Guide: Navigating the Tool
