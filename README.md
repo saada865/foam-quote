@@ -1,6 +1,6 @@
 # 🏗️ Beyond Group: Industrial Foam Quote Tool
 
-A professional, enterprise-grade React application for calculating and presenting bridge abutment rehabilitation bids. This tool transforms complex industrial job-costing into a streamlined, modular experiences for the Beyond Group team.
+A professional, enterprise-grade React application for calculating and presenting bridge abutment rehabilitation bids. This tool transforms complex industrial job-costing into a streamlined, modular experience for the Beyond Group team.
 
 ---
 
@@ -17,11 +17,29 @@ Instead of a monolithic application, I architected this project into four distin
 I made a deliberate choice to maintain **Fractional Drum Usage** in the job costs. 
 > **Rationale**: While some tools round up to the nearest drum (artificially inflating this job's cost and next week's profit), this tool tracks the exact value of the material consumed. This ensures accurate profit-margin reporting for the Lethbridge project without "stealing" value from the inventory for future jobs.
 
-### 3. Intelligent Estimation
-The tool automates three critical pain points:
-- **Automated Fuel Tracking**: Estimates distance based on Highway Travel Time (90km/h avg) and current fleet fuel rates ($0.75/km).
-- **Revenue Protection**: Automatically applies a $750/day standby fee for projects exceeding the standard 2-day window.
-- **Calculations During Render**: To eliminate the "white screen" bugs found in standard React apps, I refactored the logic to compute results on-the-fly, ensuring the UI is always stable and accurate.
+---
+
+## 📖 User Guide: Navigating the Tool
+
+### 1. The Dashboard (First Screen)
+When you first open the tool, you are met with a clean, high-contrast dashboard.
+- **Left Column (Job Parameters)**: This is where you input all specific data for your bid. 
+- **Right Column (Quote Overview)**: This updates in real-time as you type, showing the client-facing revenue breakdown.
+
+### 2. Smart Defaults & Scenarios
+- **The "Lethbridge" Baseline**: If you enter no data, the tool defaults to the parameters for the standard **Lethbridge Bridge Rehabilitation** job (18 m³ void, 2.5h travel, $40/hr labour).
+- **Auto-Calculations**: The tool automatically estimates travel distance (based on travel hours @ 90km/h) and fuel costs ($0.75/km) to save you manual odometer work.
+- **Quick Load**: Use the "Load Lethbridge Example" button at the bottom of the left panel to instantly restore the standard challenge baseline.
+
+### 3. "Hidden" Internal Analysis
+To see if your bid is actually healthy, click the **🔒 Internal Cost Build** toggle at the bottom of the right panel.
+- This reveals "private" costs like fuel burn, worker per-diems, hotel costs, and equipment maintenance.
+- **Rationale**: This allows you to audit the **Net Profit** and **Project Margin %** privately before presenting the quote to the client.
+
+### 4. Generating the Quote
+- Once you are happy with the numbers, click **⚡ Generate Professional Quote**.
+- Review the **Quote Overview** for accuracy.
+- Click **📥 Download Professional Bid (PDF)**. This will trigger a print-preview of a single-page, formal proposal with official Beyond Group branding, ready to be sent to the client.
 
 ---
 
@@ -33,14 +51,16 @@ For the standard 18 m³ project, the tool calculates:
 
 ---
 
-## 🚀 The Road Ahead (What I'd build next)
+## 🚀 Future Technical Roadmap
 If I had another 24 hours with this codebase, I would implement:
-
+1. **Multi-Job "Batching"**: Allow users to save and compare multiple bid scenarios (e.g., "Standard" vs "Expedited") side-by-side in the dashboard.
+2. **Unit Test Suite**: Implement a full suite of Vitest tests for the `calculator.js` engine to ensure zero regressions as rates change.
+3. **Advanced Pricing Tiers**: Add support for different foam types (e.g., higher density) with dynamic rate-switching in the UI.
+4. **Offline Resilience**: Use local storage to persist bid data so if a user refreshes the page or loses connection, their work isn't lost.
 
 ---
 
 ## 🛠️ Setup & Deployment
-
 **Local Development**:
 1. `npm install`
 2. `npm run dev`
@@ -48,6 +68,3 @@ If I had another 24 hours with this codebase, I would implement:
 **GitHub Sync**:
 1. `git remote add origin https://github.com/saada865/foam-quote.git`
 2. `git push -u origin main`
-
-**Vercel Hosting**:
-- Connect the GitHub repository at [vercel.com](https://vercel.com/new) for automated CI/CD.
